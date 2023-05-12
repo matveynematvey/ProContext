@@ -36,7 +36,7 @@ func main() {
 	currencies := valute.NewValutes()
 
 	start, end := time.Now(), time.Now().AddDate(0, 0, -daysLimit+1)
-
+	fmt.Println("Program started...")
 	for d := start; d.Before(end) == false; d = d.AddDate(0, 0, -1) {
 
 		date := lib.FormDate(d)
